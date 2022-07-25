@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    /* perspective: 1000px; */
+
+}
+
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: cadetblue; */
+
+}
+.card{
+    transform-style:preserve-3d ;
+
+    transition: all 1s ease;
+    perspective: 3000px;
+    width: 900px;
+    height: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* background-color: green; */
+}
+
+.circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
+
+    opacity: 50%;
+    width: 300px;
+    height: 300px;
+    transition: all 2s ease;
+    position: absolute;
+    top: 25%;
+
+}
+
+.floor{
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    transform: rotateX(90deg) translateY(150px) translateZ(-35px);
+}
+
+
+
+.circle1{
+    background-color:indianred;
+
+}
+
+.circle2{
+    background-color:darkcyan;
+    transform:rotateY(90deg) translateZ(150px) translateX(-150px    );
+
+}
+
+
+
+.circle3{
+    background-color:yellow;
+    transform:rotateY(90deg) translateZ(-150px) translateX(-150px    );
+
+}
+
+
+
+.circle4{
+    background-color: rgb(255, 0, 128);
+    transform: translateZ(300px) ;
+
+}
+
+
+.circle5{
+    background-color:rgb(0, 255, 17);
+    transform:translateY(150px) rotateX(90deg) translateY(150px);
+
+}
+
+
+.circle6{
+    background-color:rgb(50, 50, 18);
+    transform:translateY(-150px) rotateX(90deg) translateY(150px);
+}
